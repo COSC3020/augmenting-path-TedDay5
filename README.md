@@ -32,3 +32,16 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+Worst case complexity: $\Theta$(V + E)
+
+For each recursive call, the for loop iterates through each edge connected to the vertex.
+Whenever an edge connects to a vertice that hasn't been visit the function makes a recursive call.
+This limits the overall complexity since we don't have to reprocess nodes we have already visit in that path which allows us to only need to search V vertices in the worst case.
+The for loop will iterate E times since E is the number of edges connected to that vertex.
+The worse case has the for loop iterate through each nodes and edges in the graph until it finds the end node or needs to return the empty array.
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
